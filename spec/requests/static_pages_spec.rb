@@ -58,11 +58,11 @@ describe 'Static pages' do
         click_link 'Contact'
         expect(page).to have_title(full_title('Contact'))
         click_link 'Home'
-        expect(page).to have_title(full_title)
+        expect(page).to have_title(full_title(''))
         click_link 'Sign up now!'
         expect(page).to have_title(full_title('Sign Up'))
         click_link 'Sample App'
-        expect(page).to have_title(full_title)
+        expect(page).to have_title(full_title(''))
     end
 
     # not sure how to make this look right
